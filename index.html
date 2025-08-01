@@ -60,7 +60,7 @@
       <!-- Drawer -->
       <div
         id="drawer"
-        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
       >
         <div class="flex justify-between items-center gap-4 px-4 py-4 border-b">
           <!-- Drawer Logo -->
@@ -83,6 +83,13 @@
         <nav class="flex flex-col gap-4 px-6 py-6 text-[#133235]">
           <a href="#" onclick="navigateToScheme()" class="hover:text-[#a7704a]"
             >Scheme</a
+          >
+
+           <a href="#" onclick="navigateToCatalogues()" class="hover:text-[#a7704a]"
+            >Catalogues</a
+          >
+           <a href="#" onclick="navigateToQuickPurchase()" class="hover:text-[#a7704a]"
+            >Quick Purchase</a
           >
           <a
             href="#"
@@ -313,7 +320,7 @@
       <!-- Grid Container -->
       <div
         id="boxContainer"
-        class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-3 lg:gap-6 overflow-hidden transition-all duration-500 max-h-[13.5rem] sm:max-h-none"
+        class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-4 md:gap-3 lg:gap-6 overflow-hidden transition-all duration-500 max-h-[13.5rem] sm:max-h-none"
       >
         <!-- Box 1 -->
         <div
@@ -327,6 +334,32 @@
             src="https://cdn-icons-png.flaticon.com/128/10150/10150740.png"
           />
           <span class="text-sm font-semibold mt-2">Scheme</span>
+        </div>
+
+          <div
+          onclick="navigateToCatalogues()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[linear-gradient(310deg,_#87600d_4%,_#fce79d_54%,_#b68f35_97%)] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-10 h-10"
+            src="https://cdn-icons-png.flaticon.com/128/29/29341.png"
+          />
+          <span class="text-sm font-semibold mt-2">Catalogues</span>
+        </div>
+
+          <div
+          onclick="navigateToQuickPurchase()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[linear-gradient(310deg,_#87600d_4%,_#fce79d_54%,_#b68f35_97%)] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-10 h-10"
+            src="https://cdn-icons-png.flaticon.com/128/1019/1019709.png"
+          />
+          <span class="text-sm font-semibold mt-2">Quick <br class="md:hidden"> Purchase</span>
         </div>
 
         <!-- Box 2 -->

@@ -23,6 +23,14 @@ function navigateToScheme() {
   Toaster.postMessage("navigateScheme");
 }
 
+function navigateToCatalogues() {
+  Toaster.postMessage("navigateToCatalogues");
+}
+
+function navigateToQuickPurchase() {
+  Toaster.postMessage("navigateToQuickPurchase");
+}
+
 function navigateToBankDetails() {
   Toaster.postMessage("navigateBankDetails");
 }
