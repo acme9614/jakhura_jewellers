@@ -120,11 +120,11 @@ const swiper = new Swiper(".brandSwiper", {
     const arrow = document.getElementById("arrowIcon");
 
     if (!expanded) {
-      container.classList.remove("max-h-[13.5rem]");
+      container.classList.remove("max-h-[13.9rem]");
       arrow.classList.add("rotate-180");
       expanded = true;
     } else {
-      container.classList.add("max-h-[13.5rem]");
+      container.classList.add("max-h-[13.9rem]");
       arrow.classList.remove("rotate-180");
       expanded = false;
     }
